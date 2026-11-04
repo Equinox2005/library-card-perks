@@ -1,0 +1,505 @@
+{
+ "fetched": "2026-11-04",
+ "libraries": [
+  {
+   "id": "boston",
+   "name": "Boston Public Library",
+   "place": "Boston",
+   "state": "MA",
+   "home": "https://www.bpl.org/",
+   "page": "https://www.bpl.org/resource/",
+   "resources": {
+    "nyt": {
+     "label": "New York Times (current edition)",
+     "url": "https://ezproxy.bpl.org/login?url=https://apps.bpl.org/nytimes/"
+    },
+    "wsj": {
+     "label": "Wall Street Journal (current edition)",
+     "url": "https://ezproxy.bpl.org/login?url=https://apps.bpl.org/wsj/"
+    },
+    "linkedin": {
+     "label": "LinkedIn Learning",
+     "url": "https://www.linkedin.com/learning-login/go/bostonpubliclibrary"
+    },
+    "kanopy": {
+     "label": "Kanopy",
+     "url": "https://boston.kanopy.com/"
+    },
+    "mango": {
+     "label": "Mango Languages",
+     "url": "https://ezproxy.bpl.org/login?url=https://connect.mangolanguages.com/boston/start"
+    },
+    "ancestry": {
+     "label": "Ancestry Library Edition",
+     "url": "https://www.bpl.org/resource/"
+    },
+    "morningstar": {
+     "label": "Morningstar Investment Research Center",
+     "url": "https://ezproxy.bpl.org/login?url=https://research.morningstar.com/ic/ip-sign-in"
+    },
+    "valueline": {
+     "label": "Value Line",
+     "url": "https://ezproxy.bpl.org/login?url=https://investors.valueline.com/Users/Account/LogOn?returnUrl=https://research.valueline.com/secure/dashboard"
+    },
+    "pressreader": {
+     "label": "PressReader",
+     "url": "https://ezproxy.bpl.org/login?url=https://www.pressreader.com"
+    }
+   }
+  },
+  {
+   "id": "brooklyn",
+   "name": "Brooklyn Public Library",
+   "place": "Brooklyn",
+   "state": "NY",
+   "home": "https://www.bklynlibrary.org/",
+   "page": "https://bklynlibrary.libguides.com/az/databases",
+   "resources": {
+    "linkedin": {
+     "label": "LinkedIn Learning",
+     "url": "https://www.bklynlibrary.org/online-resources/linkedin-learning"
+    },
+    "morningstar": {
+     "label": "Morningstar Investment Research Center",
+     "url": "https://www.bklynlibrary.org/online-resources/morningstar-investment"
+    },
+    "valueline": {
+     "label": "Value Line Investment Survey",
+     "url": "https://www.bklynlibrary.org/online-resources/value-line-investment"
+    },
+    "tutor": {
+     "label": "Brainfuse HelpNow",
+     "url": "https://www.bklynlibrary.org/online-resources/brainfuse-helpnow"
+    },
+    "pressreader": {
+     "label": "PressReader",
+     "url": "https://www.bklynlibrary.org/online-resources/pressreader"
+    }
+   }
+  },
+  {
+   "id": "clp",
+   "name": "Carnegie Library of Pittsburgh",
+   "place": "Pittsburgh",
+   "state": "PA",
+   "home": "https://www.carnegielibrary.org/",
+   "page": "https://carnegielibrary.libguides.com/az/databases",
+   "resources": {
+    "nyt": {
+     "label": "New York Times",
+     "url": "https://carnegielibrary.libguides.com/newyorktimes"
+    },
+    "cr": {
+     "label": "Consumer Reports",
+     "url": "https://carnegielibrary.libguides.com/consumerreports"
+    },
+    "linkedin": {
+     "label": "LinkedIn Learning (formerly Lynda.com)",
+     "url": "https://carnegielibrary.libguides.com/linkedinlearning"
+    },
+    "udemy": {
+     "label": "Gale Presents: UDEMY",
+     "url": "https://carnegielibrary.libguides.com/GaleUdemy"
+    },
+    "mango": {
+     "label": "Mango Languages",
+     "url": "https://carnegielibrary.libguides.com/mangolanguages"
+    },
+    "ancestry": {
+     "label": "Ancestry Library Edition",
+     "url": "https://carnegielibrary.libguides.com/ancestrylibraryedition"
+    },
+    "morningstar": {
+     "label": "Morningstar Investment Research Center",
+     "url": "https://carnegielibrary.libguides.com/morningstarinvestmentresearch"
+    },
+    "valueline": {
+     "label": "Value Line",
+     "url": "http://clp-ezp.carnegielibrary.org/login?url=http://clp-ezp.carnegielibrary.org/login?url=https://research.valueline.com/secure/dashboard"
+    },
+    "tutor": {
+     "label": "Tutor.com – Live Homework Help",
+     "url": "http://clp-ezp.carnegielibrary.org/login?url=https://www.tutor.com/clpgh/"
+    },
+    "pressreader": {
+     "label": "PressReader",
+     "url": "http://clp-ezp.carnegielibrary.org/login?url=https://www.pressreader.com/"
+    }
+   }
+  },
+  {
+   "id": "chicago",
+   "name": "Chicago Public Library",
+   "place": "Chicago",
+   "state": "IL",
+   "home": "https://www.chipublib.org/",
+   "page": "https://www.chipublib.org/online-resources-2/",
+   "resources": {
+    "nyt": {
+     "label": "New York Times (online and app)",
+     "url": "https://www.chipublib.org/online-resources-2/"
+    },
+    "linkedin": {
+     "label": "LinkedIn Learning",
+     "url": "https://www.linkedin.com/learning-login/go/chipublib"
+    },
+    "mango": {
+     "label": "Mango Languages",
+     "url": "https://chipublib.idm.oclc.org/login?url=http://libraries.mangolanguages.com/chicago/start"
+    },
+    "morningstar": {
+     "label": "Morningstar",
+     "url": "https://chipublib.idm.oclc.org/login?url=https://research.morningstar.com/ic/ip-sign-in"
+    }
+   }
+  },
+  {
+   "id": "dc",
+   "name": "DC Public Library",
+   "place": "Washington",
+   "state": "DC",
+   "home": "https://www.dclibrary.org/",
+   "page": "https://www.dclibrary.org/research-learn",
+   "resources": {
+    "nyt": {
+     "label": "New York Times",
+     "url": "https://www.dclibrary.org/research-and-learn/new-york-times"
+    },
+    "wsj": {
+     "label": "Wall Street Journal",
+     "url": "https://www.dclibrary.org/research-and-learn/wall-street-journal"
+    },
+    "wapo": {
+     "label": "Washington Post",
+     "url": "https://www.dclibrary.org/research-and-learn/washington-post"
+    },
+    "cr": {
+     "label": "Consumer Reports",
+     "url": "https://www.dclibrary.org/research-and-learn/consumer-reports"
+    },
+    "linkedin": {
+     "label": "LinkedIn Learning",
+     "url": "https://www.dclibrary.org/research-and-learn/linkedin-learning"
+    },
+    "kanopy": {
+     "label": "Kanopy",
+     "url": "https://www.dclibrary.org/research-and-learn/kanopy"
+    },
+    "mango": {
+     "label": "Mango Languages",
+     "url": "https://www.dclibrary.org/research-and-learn/mango-languages"
+    },
+    "ancestry": {
+     "label": "Ancestry Library Edition",
+     "url": "https://www.dclibrary.org/research-and-learn/ancestry-library-edition"
+    },
+    "morningstar": {
+     "label": "Morningstar Library Edition",
+     "url": "https://www.dclibrary.org/research-and-learn/morningstar-library-edition"
+    },
+    "valueline": {
+     "label": "Value Line",
+     "url": "https://www.dclibrary.org/research-and-learn/value-line"
+    },
+    "tutor": {
+     "label": "Brainfuse HelpNow",
+     "url": "https://www.dclibrary.org/research-and-learn/brainfuse-helpnow"
+    },
+    "pressreader": {
+     "label": "PressReader",
+     "url": "https://www.dclibrary.org/research-and-learn/pressreader"
+    }
+   }
+  },
+  {
+   "id": "denver",
+   "name": "Denver Public Library",
+   "place": "Denver",
+   "state": "CO",
+   "home": "https://www.denverlibrary.org/",
+   "page": "https://www.denverlibrary.org/downloads",
+   "resources": {
+    "nyt": {
+     "label": "New York Times",
+     "url": "https://www.denverlibrary.org/nytimes/"
+    },
+    "kanopy": {
+     "label": "Kanopy",
+     "url": "https://denverlibrary.kanopy.com/"
+    },
+    "pressreader": {
+     "label": "PressReader",
+     "url": "https://www.denverlibrary.org/downloads"
+    },
+    "ancestry": {
+     "label": "Ancestry Library Edition",
+     "url": "https://www.denverlibrary.org/research"
+    }
+   }
+  },
+  {
+   "id": "pratt",
+   "name": "Enoch Pratt Free Library",
+   "place": "Baltimore",
+   "state": "MD",
+   "home": "https://www.prattlibrary.org/",
+   "page": "https://www.prattlibrary.org/research/databases",
+   "resources": {
+    "nyt": {
+     "label": "New York Times",
+     "url": "https://www.prattlibrary.org/research/databases/new-york-times"
+    },
+    "wsj": {
+     "label": "Wall Street Journal",
+     "url": "https://www.prattlibrary.org/research/databases/wall-street-journal"
+    },
+    "udemy": {
+     "label": "Online Courses with Udemy",
+     "url": "https://www.prattlibrary.org/research/databases/online-courses-with-udemy"
+    },
+    "ancestry": {
+     "label": "Ancestry Library Edition",
+     "url": "https://www.prattlibrary.org/research/databases/ancestry-library-edition"
+    },
+    "morningstar": {
+     "label": "Morningstar Investing Center",
+     "url": "https://www.prattlibrary.org/research/databases/morningstar-investing-center"
+    },
+    "valueline": {
+     "label": "Value Line Investment Information",
+     "url": "https://www.prattlibrary.org/research/databases/value-line-investment-information"
+    },
+    "pressreader": {
+     "label": "PressReader",
+     "url": "https://www.prattlibrary.org/research/databases/pressreader"
+    }
+   }
+  },
+  {
+   "id": "fairfax",
+   "name": "Fairfax County Public Library",
+   "place": "Fairfax County",
+   "state": "VA",
+   "home": "https://www.fairfaxcounty.gov/library/",
+   "page": "https://research.fairfaxcounty.gov/az/databases",
+   "resources": {
+    "nyt": {
+     "label": "New York Times",
+     "url": "https://fairfax.museknowledge.com/fcpl?qurl=https://search.proquest.com/nytimes?accountid=34227"
+    },
+    "wsj": {
+     "label": "Wall Street Journal",
+     "url": "https://fairfax.museknowledge.com/fcpl?qurl=https://search.proquest.com/wallstreetjournal?accountid=34227"
+    },
+    "wapo": {
+     "label": "Washington Post",
+     "url": "https://fairfax.museknowledge.com/fcpl?qurl=https://search.proquest.com/washingtonpost?accountid=34227"
+    },
+    "cr": {
+     "label": "Consumer Reports",
+     "url": "https://fairfax.museknowledge.com/fcpl?qurl=https://search.ebscohost.com/login.aspx?authtype=ip&custid=s4132146&groupid=main&site=crcro"
+    },
+    "linkedin": {
+     "label": "LinkedIn Learning",
+     "url": "https://www.linkedin.com/learning-login/go/fairfaxlibrary"
+    },
+    "mango": {
+     "label": "Mango Languages",
+     "url": "https://connect.mangolanguages.com/fairfax/start"
+    },
+    "ancestry": {
+     "label": "Ancestry Library Edition (Available in Library Only)",
+     "url": "https://research.fairfaxcounty.gov/az/databases"
+    },
+    "morningstar": {
+     "label": "Morningstar",
+     "url": "https://fairfax.museknowledge.com/fcpl?qurl=https%3A%2F%2Fresearch.morningstar.com/ic/ip-sign-in"
+    },
+    "valueline": {
+     "label": "Value Line Research Center",
+     "url": "https://investors.valueline.com/Users/Account/barcode?urlid=9f60a9e8-05d9-4d79-8bd4-d7a596e6ec9c&=2&o=research&lp=secure%2fdashboard"
+    },
+    "tutor": {
+     "label": "BrainFuse VetNow",
+     "url": "https://landing.brainfuse.com/authenticate.asp?u=main.fairfaxcountypubliclibrary.virginialibrariesvn.va.brainfuse.com"
+    }
+   }
+  },
+  {
+   "id": "hennepin",
+   "name": "Hennepin County Library",
+   "place": "Minneapolis",
+   "state": "MN",
+   "home": "https://www.hclib.org/",
+   "page": "https://www.hclib.org/browse/online-resources",
+   "resources": {
+    "nyt": {
+     "label": "New York Times",
+     "url": "https://hclib.bibliocommons.com/item/show/4693309109"
+    },
+    "wsj": {
+     "label": "Wall Street Journal, ProQuest Recent Newspapers",
+     "url": "https://dbauth.hclib.org/PDNWSJ"
+    },
+    "cr": {
+     "label": "Consumer Reports",
+     "url": "https://dbauth.hclib.org/ConsumerReports"
+    },
+    "linkedin": {
+     "label": "LinkedIn Learning for Library",
+     "url": "https://www.linkedin.com/learning-login/go/hclib"
+    },
+    "ancestry": {
+     "label": "Ancestry Library Edition",
+     "url": "https://dbauth.hclib.org/Ancestry"
+    },
+    "morningstar": {
+     "label": "Morningstar Investing Center",
+     "url": "https://dbauth.hclib.org/Morningstar"
+    },
+    "valueline": {
+     "label": "Value Line",
+     "url": "https://dbauth.hclib.org/ValueLine"
+    },
+    "tutor": {
+     "label": "HelpNow",
+     "url": "https://dbauth.hclib.org/BrainFuse"
+    },
+    "pressreader": {
+     "label": "PressReader",
+     "url": "https://dbauth.hclib.org/PressReader"
+    }
+   }
+  },
+  {
+   "id": "lapl",
+   "name": "Los Angeles Public Library",
+   "place": "Los Angeles",
+   "state": "CA",
+   "home": "https://www.lapl.org/",
+   "page": "https://www.lapl.org/digital-library",
+   "resources": {
+    "nyt": {
+     "label": "New York Times Digital",
+     "url": "https://login.lapl.idm.oclc.org/login?url=https://ezmyaccount.nytimes.com/group-pass"
+    },
+    "wapo": {
+     "label": "Washington Post",
+     "url": "https://login.lapl.idm.oclc.org/login?url=https://www.washingtonpost.com/subscribe/signin/special-offers?s_oe=SPECIALOFFER_LOSANGELESPL"
+    },
+    "linkedin": {
+     "label": "LinkedIn Learning (was lynda.com)",
+     "url": "https://www.linkedin.com/learning-login/go/lapl"
+    },
+    "kanopy": {
+     "label": "Kanopy",
+     "url": "https://lapl.kanopystreaming.com/"
+    },
+    "hoopla": {
+     "label": "hoopla",
+     "url": "https://www.lapl.org/digital-library"
+    },
+    "mango": {
+     "label": "Mango Languages",
+     "url": "https://login.lapl.idm.oclc.org/login?qurl=https%3A//connect.mangolanguages.com/los-angeles/start"
+    },
+    "pressreader": {
+     "label": "PressReader",
+     "url": "https://m.lapl.org/webfeat/press_display.html"
+    }
+   }
+  },
+  {
+   "id": "sfpl",
+   "name": "San Francisco Public Library",
+   "place": "San Francisco",
+   "state": "CA",
+   "home": "https://sfpl.org/",
+   "page": "https://sfpl.org/research-learn/elibrary/emagazines-enews",
+   "resources": {
+    "nyt": {
+     "label": "New York Times",
+     "url": "https://ezproxy.sfpl.org/login?url=https://www.pressreader.com/newspapers/n/the-new-york-times"
+    },
+    "wsj": {
+     "label": "The Wall Street Journal",
+     "url": "https://ezproxy.sfpl.org/login?url=https://partner.wsj.com/p/1148200010/enter-redemption-code/P43606U85WE7"
+    },
+    "wapo": {
+     "label": "The Washington Post",
+     "url": "https://ezproxy.sfpl.org/login?url=https://www.proquest.com/publication/10327"
+    },
+    "cr": {
+     "label": "Consumer Reports",
+     "url": "https://ezproxy.sfpl.org/login?url=https://flipster.ebsco.com/c/gswfel/details/3740825"
+    },
+    "pressreader": {
+     "label": "PressReader",
+     "url": "https://ezproxy.sfpl.org/login?url=https://pressreader.com"
+    }
+   }
+  },
+  {
+   "id": "seattle",
+   "name": "Seattle Public Library",
+   "place": "Seattle",
+   "state": "WA",
+   "home": "https://www.spl.org/",
+   "page": "https://www.spl.org/online-resources/a-z-online-resources",
+   "resources": {
+    "nyt": {
+     "label": "New York Times Digital",
+     "url": "https://ezproxy.spl.org/login/nyt"
+    },
+    "wsj": {
+     "label": "Wall Street Journal Digital",
+     "url": "https://ezproxy.spl.org/login?url=https://partner.wsj.com/p/1148200010/enter-redemption-code/P319U5M4W3C2"
+    },
+    "wapo": {
+     "label": "Washington Post Digital",
+     "url": "https://www.washingtonpost.com/subscribe/signin/special-offers/?s_oe=SPECIALOFFER_SEATTLEPL"
+    },
+    "cr": {
+     "label": "Consumer Reports",
+     "url": "https://ezproxy.spl.org/login?url=https://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=crcro"
+    },
+    "linkedin": {
+     "label": "LinkedIn Learning",
+     "url": "https://www.linkedin.com/learning-login/go/seattlepl"
+    },
+    "kanopy": {
+     "label": "Kanopy",
+     "url": "https://spl.kanopystreaming.com/"
+    },
+    "hoopla": {
+     "label": "Hoopla",
+     "url": "https://www.spl.org/online-resources/a-z-online-resources"
+    },
+    "mango": {
+     "label": "Mango Languages",
+     "url": "https://ezproxy.spl.org/login?url=https://connect.mangolanguages.com/seattle/start"
+    },
+    "ancestry": {
+     "label": "Ancestry Library Edition",
+     "url": "https://ezproxy.spl.org/login?url=https://ancestrylibrary.proquest.com"
+    },
+    "morningstar": {
+     "label": "Morningstar Investment Research Center",
+     "url": "https://ezproxy.spl.org/login?url=https://research.morningstar.com/ic/ip-sign-in"
+    },
+    "valueline": {
+     "label": "Value Line",
+     "url": "https://ezproxy.spl.org/login?url=https://research.valueline.com/secure/dashboard"
+    },
+    "tutor": {
+     "label": "Tutor.com",
+     "url": "https://leo.tutor.com/?ProgramGuid=c3d0ec8c-ffcb-4440-ad6e-21ef45ca0b7c"
+    },
+    "pressreader": {
+     "label": "PressReader",
+     "url": "https://ezproxy.spl.org/login?url=https://www.pressreader.com"
+    }
+   }
+  }
+ ]
+}

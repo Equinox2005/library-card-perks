@@ -1,0 +1,15 @@
+{
+  "name": "library-card-perks",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome extension that reminds you when your library card gets you something free: NYT, WSJ, Consumer Reports, LinkedIn Learning and more.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "e2e": "node test/e2e/run.js",
+    "data": "node scripts/build-data.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Library Card Perks</title>
+    <link rel="stylesheet" href="../shared.css" />
+  </head>
+  <body class="popup">
+    <header>
+      <h1>Library Card Perks</h1>
+      <a id="change" href="../options/options.html" target="_blank">Change library</a>
+    </header>
+
+    <section id="none" hidden>
+      <p>Pick your library first. Nothing shows until you do.</p>
+      <p><a href="../options/options.html" target="_blank">Choose a library</a></p>
+    </section>
+
+    <section id="mine" hidden>
+      <p id="libname" class="libname"></p>
+      <div id="here-box" hidden>
+        <h2>On this site</h2>
+        <ul id="here" class="offers"></ul>
+        <label class="setting"><input id="mute" type="checkbox" /> <span id="mute-label">Don't show the card on this site</span></label>
+      </div>
+      <h2>Free with your card</h2>
+      <ul id="all" class="offers"></ul>
+      <p id="nothing" class="muted" hidden>None of the services this extension knows about are on your library's list.</p>
+    </section>
+
+    <footer>
+      <p class="muted">Links go through your library's own sign-in. Nothing leaves your browser.</p>
+    </footer>
+    <script src="popup.js" type="module"></script>
+  </body>
+</html>

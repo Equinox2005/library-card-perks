@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "Library Card Perks",
+  "version": "0.1.0",
+  "description": "Reminds you when your library card gets you something free: the NYT, WSJ, Consumer Reports, LinkedIn Learning, Kanopy and more.",
+  "minimum_chrome_version": "120",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "Library Card Perks",
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  },
+  "options_page": "src/options/options.html",
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.nytimes.com/*",
+        "https://*.wsj.com/*",
+        "https://*.washingtonpost.com/*",
+        "https://*.consumerreports.org/*",
+        "https://*.linkedin.com/learning/*",
+        "https://*.udemy.com/*",
+        "https://*.coursera.org/*",
+        "https://*.rosettastone.com/*",
+        "https://*.babbel.com/*",
+        "https://*.ancestry.com/*",
+        "https://*.morningstar.com/*",
+        "https://*.valueline.com/*",
+        "https://*.chegg.com/*",
+        "https://*.primevideo.com/*",
+        "https://tv.apple.com/*"
+      ],
+      "js": ["src/content/content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

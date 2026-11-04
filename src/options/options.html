@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Library Card Perks</title>
+    <link rel="stylesheet" href="../shared.css" />
+  </head>
+  <body class="options">
+    <h1>Library Card Perks</h1>
+    <p>Pick the library you have a card for. When you're on a site it gives away, like nytimes.com or LinkedIn Learning, a small card in the corner links you to the library's free access.</p>
+
+    <h2><label for="filter">Your library</label></h2>
+    <input id="filter" type="search" placeholder="Search by name, city or state" autocomplete="off" />
+    <ul id="list" class="libraries"></ul>
+    <p class="muted" id="fetched"></p>
+
+    <details id="custom-box">
+      <summary>My library isn't listed</summary>
+      <p class="muted">Your library's website lists these under "online resources", "eResources" or "databases". Paste the link for each one it has; leave the rest empty.</p>
+      <form id="custom">
+        <div class="fields" id="fields">
+          <label for="custom-name">Library name</label>
+          <input id="custom-name" type="text" autocomplete="off" />
+        </div>
+        <button class="save" type="submit">Save my library</button>
+      </form>
+    </details>
+
+    <p id="status" role="status"></p>
+    <script src="options.js" type="module"></script>
+  </body>
+</html>

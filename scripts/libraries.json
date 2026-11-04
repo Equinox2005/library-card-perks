@@ -1,0 +1,14 @@
+[
+  {"id": "clp", "name": "Carnegie Library of Pittsburgh", "place": "Pittsburgh", "state": "PA", "home": "https://www.carnegielibrary.org/", "lists": [{"libguides": "carnegielibrary.libguides.com", "site": 22630}]},
+  {"id": "boston", "name": "Boston Public Library", "place": "Boston", "state": "MA", "home": "https://www.bpl.org/", "lists": [{"html": "https://www.bpl.org/resource/"}]},
+  {"id": "brooklyn", "name": "Brooklyn Public Library", "place": "Brooklyn", "state": "NY", "home": "https://www.bklynlibrary.org/", "lists": [{"libguides": "bklynlibrary.libguides.com", "site": 10842}]},
+  {"id": "chicago", "name": "Chicago Public Library", "place": "Chicago", "state": "IL", "home": "https://www.chipublib.org/", "lists": [{"html": "https://www.chipublib.org/online-resources-2/"}]},
+  {"id": "dc", "name": "DC Public Library", "place": "Washington", "state": "DC", "home": "https://www.dclibrary.org/", "lists": [{"html": "https://www.dclibrary.org/research-learn"}]},
+  {"id": "denver", "name": "Denver Public Library", "place": "Denver", "state": "CO", "home": "https://www.denverlibrary.org/", "lists": [{"html": "https://www.denverlibrary.org/downloads"}, {"html": "https://www.denverlibrary.org/research"}]},
+  {"id": "fairfax", "name": "Fairfax County Public Library", "place": "Fairfax County", "state": "VA", "home": "https://www.fairfaxcounty.gov/library/", "lists": [{"libguides": "research.fairfaxcounty.gov", "site": 11667}]},
+  {"id": "hennepin", "name": "Hennepin County Library", "place": "Minneapolis", "state": "MN", "home": "https://www.hclib.org/", "lists": [{"html": "https://www.hclib.org/browse/online-resources"}]},
+  {"id": "lapl", "name": "Los Angeles Public Library", "place": "Los Angeles", "state": "CA", "home": "https://www.lapl.org/", "lists": [{"html": "https://www.lapl.org/digital-library"}]},
+  {"id": "pratt", "name": "Enoch Pratt Free Library", "place": "Baltimore", "state": "MD", "home": "https://www.prattlibrary.org/", "lists": [{"html": "https://www.prattlibrary.org/research/databases"}]},
+  {"id": "seattle", "name": "Seattle Public Library", "place": "Seattle", "state": "WA", "home": "https://www.spl.org/", "lists": [{"html": "https://www.spl.org/online-resources/a-z-online-resources"}]},
+  {"id": "sfpl", "name": "San Francisco Public Library", "place": "San Francisco", "state": "CA", "home": "https://sfpl.org/", "lists": [{"html": "https://sfpl.org/research-learn/elibrary/emagazines-enews"}]}
+]
