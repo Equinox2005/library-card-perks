@@ -75,5 +75,5 @@ details { margin-top: 18px; }
 summary { cursor: pointer; }
 .fields { display: grid; grid-template-columns: 190px 1fr; gap: 8px 12px; align-items: center; margin-top: 12px; }
 .fields label { color: var(--muted); }
-button.save { margin-top: 12px; font: inherit; padding: 6px 14px; border-radius: 6px; border: 1px solid var(--line); background: var(--accent); color: #fff; cursor: pointer; }
+button.save { margin-top: 12px; font: inherit; padding: 6px 14px; border-radius: 6px; border: 1px solid var(--line); background: var(--accent); color: var(--bg); cursor: pointer; }
 #status { margin-top: 12px; color: var(--accent); min-height: 1.4em; }

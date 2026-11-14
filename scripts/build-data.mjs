@@ -47,12 +47,15 @@ const VENDOR_HOME = /^https?:\/\/(www\.)?(nytimes|wsj|washingtonpost|hoopladigit
 
 // For each service, the best link: a short name for the service itself
 // beats a sentence that mentions it, and archive products don't count.
+// A "... Digital" entry comes first: it's the pass for the paper's own
+// site, and the plain name beside it is the article database.
 export function findResources(pageLinks, page) {
   const found = {};
   for (const [key, resource] of Object.entries(RESOURCES)) {
     const candidates = pageLinks.filter(([text]) => text.length <= 80 && resource.match.test(text) && !ARCHIVE.test(text) && !resource.skip?.test(text));
     if (!candidates.length) continue;
-    const [text, url] = candidates.reduce((a, b) => (b[0].length < a[0].length ? b : a));
+    const digital = candidates.filter(([text]) => /\bdigital\b/i.test(text));
+    const [text, url] = (digital.length ? digital : candidates).reduce((a, b) => (b[0].length < a[0].length ? b : a));
     found[key] = { label: text, url: VENDOR_HOME.test(url) && page ? page : url };
   }
   return found;

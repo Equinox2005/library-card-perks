@@ -33,7 +33,7 @@ The list isn't typed in. `npm run data` reads each library's public list of onli
 
 Adding a library is one line in `scripts/libraries.json`.
 
-Everything runs locally. There's no server, it never sees your card number, and the only permission is `storage`.
+Everything runs locally. There's no server, it never sees your card number, and the only permissions are `storage` and `activeTab`, which lets the popup see which site you're on when you open it.
 
 ## Install
 
@@ -46,7 +46,7 @@ Not on the Chrome Web Store yet. To load it:
 ## Development
 
 ```bash
-npm test              # unit tests (Node 20+, no dependencies)
+npm test              # unit tests (Node 22+, no dependencies)
 npm run e2e           # loads the extension into headless Chrome against stand-in pages
 npm run data          # re-reads every library's list into data/libraries.json
 ```

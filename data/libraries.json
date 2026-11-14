@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-04",
+ "fetched": "2026-11-14",
  "libraries": [
   {
    "id": "boston",
@@ -162,16 +162,16 @@
    "page": "https://www.dclibrary.org/research-learn",
    "resources": {
     "nyt": {
-     "label": "New York Times",
-     "url": "https://www.dclibrary.org/research-and-learn/new-york-times"
+     "label": "New York Times Digital",
+     "url": "https://www.dclibrary.org/research-and-learn/new-york-times-digital"
     },
     "wsj": {
      "label": "Wall Street Journal",
      "url": "https://www.dclibrary.org/research-and-learn/wall-street-journal"
     },
     "wapo": {
-     "label": "Washington Post",
-     "url": "https://www.dclibrary.org/research-and-learn/washington-post"
+     "label": "Washington Post Digital",
+     "url": "https://www.dclibrary.org/research-and-learn/washington-post-digital"
     },
     "cr": {
      "label": "Consumer Reports",
@@ -320,8 +320,8 @@
      "url": "https://investors.valueline.com/Users/Account/barcode?urlid=9f60a9e8-05d9-4d79-8bd4-d7a596e6ec9c&=2&o=research&lp=secure%2fdashboard"
     },
     "tutor": {
-     "label": "BrainFuse VetNow",
-     "url": "https://landing.brainfuse.com/authenticate.asp?u=main.fairfaxcountypubliclibrary.virginialibrariesvn.va.brainfuse.com"
+     "label": "BrainFuse HelpNow",
+     "url": "https://landing.brainfuse.com/index.asp?u=main.fairfaxcountypubliclibrary.virginialibrarieshn.va.brainfuse.com"
     }
    }
   },
@@ -436,6 +436,30 @@
     "pressreader": {
      "label": "PressReader",
      "url": "https://ezproxy.sfpl.org/login?url=https://pressreader.com"
+    },
+    "linkedin": {
+     "label": "Linkedin Learning",
+     "url": "https://www.linkedin.com/learning-login/go/sfpl"
+    },
+    "udemy": {
+     "label": "Udemy Video Courses",
+     "url": "https://www.ezproxy.sfpl.org/login?url=https://link.gale.com/apps/udemy/auth?prodId=UDEMY&userGroupName=sfpl_main"
+    },
+    "kanopy": {
+     "label": "kanopy.com",
+     "url": "https://www.kanopy.com/en/sfpl/"
+    },
+    "mango": {
+     "label": "Mango Languages",
+     "url": "https://ezproxy.sfpl.org/login?url=https://connect.mangolanguages.com/san-francisco/start"
+    },
+    "ancestry": {
+     "label": "Ancestry Library Edition",
+     "url": "https://sfpl.org/research-learn/elearning"
+    },
+    "tutor": {
+     "label": "Brainfuse HelpNow",
+     "url": "https://ezproxy.sfpl.org/login?url=https://main_sanfran_ca.svc.brainfuse.com"
     }
    }
   },

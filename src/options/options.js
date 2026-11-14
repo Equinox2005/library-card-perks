@@ -61,7 +61,8 @@ async function init() {
     settings.library = 'custom';
     await chrome.storage.sync.set({ library: 'custom', custom: { name, links } });
     draw();
-    say(`Saved: ${name}, ${Object.keys(links).length} services.`);
+    const count = Object.keys(links).length;
+    say(`Saved: ${name}, ${count} ${count === 1 ? 'service' : 'services'}.`);
   });
 }
 

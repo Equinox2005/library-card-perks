@@ -23,7 +23,7 @@
     "service_worker": "src/background.js",
     "type": "module"
   },
-  "permissions": ["storage"],
+  "permissions": ["storage", "activeTab"],
   "content_scripts": [
     {
       "matches": [

@@ -86,7 +86,7 @@ try {
   check('picking it saves it', saved === 'Saved: Carnegie Library of Pittsburgh.', saved);
   if (screenshotDir) {
     await tab.evaluate(`(() => { const f = document.getElementById('filter'); f.value = ''; f.dispatchEvent(new Event('input')); document.getElementById('status').textContent = ''; })()`);
-    const clip = await tab.evaluate(`(() => { const r = document.body.getBoundingClientRect(); return { x: r.x, y: 0, width: r.width, height: 560, scale: 1 }; })()`);
+    const clip = await tab.evaluate(`(() => { const r = document.body.getBoundingClientRect(); return { x: r.x, y: 0, width: r.width, height: 580, scale: 1 }; })()`);
     const { data: png } = await tab.send('Page.captureScreenshot', { format: 'png', clip });
     writeFileSync(join(root, screenshotDir, 'settings.png'), Buffer.from(png, 'base64'));
   }
@@ -101,6 +101,19 @@ try {
     const { data: png } = await tab.send('Page.captureScreenshot', { format: 'png', clip: { x: 0, y: 0, width: 1100, height: 760, scale: 0.8 } });
     writeFileSync(join(root, screenshotDir, 'nytimes.png'), Buffer.from(png, 'base64'));
   }
+
+  // The popup, opened the way a click on the toolbar button opens it, knows which site it's over.
+  await tab.send('Page.bringToFront');
+  const { targetInfos: openTabs } = await chrome.send('Target.getTargets', { filter: [{ type: 'tab' }] });
+  await chrome.send('Extensions.triggerAction', { id: extensionId, targetId: openTabs.find((t) => t.url.includes('nytimes.com')).targetId });
+  const toolbarPopup = await waitFor(async () => (await chrome.send('Target.getTargets')).targetInfos.find((t) => t.url.endsWith('/popup/popup.html')), { label: 'toolbar popup' });
+  const { sessionId: popupSession } = await chrome.send('Target.attachToTarget', { targetId: toolbarPopup.targetId, flatten: true });
+  const here = await waitFor(async () => {
+    const { result } = await chrome.send('Runtime.evaluate', { expression: `[...document.querySelectorAll('#here li')].map((li) => li.firstChild.firstChild.textContent + ' -> ' + li.querySelector('a').href)`, returnByValue: true }, popupSession);
+    return result.value?.length ? result.value : null;
+  }, { label: 'popup on nytimes.com', timeout: 4000 }).catch(() => null);
+  check('popup on nytimes.com: what’s free on this site', JSON.stringify(here) === JSON.stringify(expected), `${JSON.stringify(here)} vs ${JSON.stringify(expected)}`);
+  await chrome.send('Target.closeTarget', { targetId: toolbarPopup.targetId });
 
   // Once a day per site.
   await tab.open('https://www.nytimes.com/2026/11/04/business/electricity-prices.html');
@@ -118,8 +131,8 @@ try {
   // The popup lists everything the card gets you. It also has the
   // extension's storage, used here to forget today's "already shown".
   const popup = await attach(`chrome-extension://${extensionId}/src/popup/popup.html`);
-  await waitFor(async () => popup.evaluate(`typeof chrome.storage?.local?.remove === 'function'`), { label: 'popup storage' });
-  await popup.evaluate(`chrome.storage.local.remove('shown')`);
+  await waitFor(async () => popup.evaluate(`typeof chrome.storage?.local?.clear === 'function'`), { label: 'popup storage' });
+  await popup.evaluate(`chrome.storage.local.clear()`);
   await tab.open('https://www.linkedin.com/learning/excel-essential-training');
   await sleep(1500);
   check('a muted site stays quiet on later visits', (await cardLines(tab.evaluate)) === null);
@@ -148,7 +161,7 @@ try {
     const text = await tab.evaluate(`document.getElementById('status').textContent`);
     return /Mt\. Lebanon/.test(text) ? text : null;
   }, { label: 'custom saved' }).catch(() => null);
-  check('a library typed in by hand saves', customSaved === 'Saved: Mt. Lebanon Public Library, 1 services.', customSaved);
+  check('a library typed in by hand saves', customSaved === 'Saved: Mt. Lebanon Public Library, 1 service.', customSaved);
   await tab.open('https://www.consumerreports.org/appliances/refrigerators/best-refrigerators');
   const cr = await waitFor(async () => cardLines(tab.evaluate), { label: 'card on Consumer Reports', timeout: 8000 }).catch(() => null);
   check('Consumer Reports: the typed-in link is used', cr?.[0] === 'Consumer Reports -> https://mtlebanon.example/consumer-reports', JSON.stringify(cr));

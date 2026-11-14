@@ -41,11 +41,24 @@ test('the shortest matching name wins over a sentence that mentions it', () => {
   assert.deepEqual(found.nyt, { label: 'New York Times', url: 'https://a.example/nyt' });
 });
 
+test('the pass for the paper’s own site beats the article database', () => {
+  const found = findResources(
+    [
+      ['New York Times', 'https://a.example/database'],
+      ['New York Times Digital', 'https://a.example/pass'],
+      ['New York Times Digital Microfilm', 'https://a.example/micro'],
+    ],
+    page,
+  );
+  assert.deepEqual(found.nyt, { label: 'New York Times Digital', url: 'https://a.example/pass' });
+});
+
 test('job help is not homework help, and a magazine pass is not hoopla', () => {
   const found = findResources(
     [
       ['Brainfuse JobNow', 'https://a.example/jobnow'],
       ['Brainfuse HelpNow', 'https://a.example/helpnow'],
+      ['Brainfuse VetNow', 'https://a.example/vetnow'],
       ['Hoopla Magazines BingePass', 'https://a.example/binge'],
     ],
     page,

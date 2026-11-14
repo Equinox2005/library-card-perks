@@ -29,5 +29,3 @@ export function offersFor(library, hostname, pathname) {
 
 // Everything the library gives away, in the order of RESOURCES.
 export const allOffers = (library) => (library ? Object.keys(RESOURCES).filter((key) => library.resources[key]).map((key) => offer(library, key)) : []);
-
-export const today = (now = new Date()) => now.toISOString().slice(0, 10);

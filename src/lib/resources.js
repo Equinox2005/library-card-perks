@@ -18,7 +18,7 @@ export const RESOURCES = {
   ancestry: { name: 'Ancestry Library Edition', match: /\bancestry\b/i, note: 'Usually only on library computers or library Wi-Fi.' },
   morningstar: { name: 'Morningstar Investment Research Center', match: /\bmorningstar\b/i },
   valueline: { name: 'Value Line', match: /\bvalue ?line\b/i },
-  tutor: { name: 'Live homework help', match: /\btutor\.com\b|\bbrainfuse\b|\bhelpnow\b/i, skip: /\bjob/i },
+  tutor: { name: 'Live homework help', match: /\btutor\.com\b|\bbrainfuse\b|\bhelpnow\b/i, skip: /\bjob|\bvet/i },
   pressreader: { name: 'PressReader', match: /\bpressreader\b/i },
 };
 

@@ -10,5 +10,5 @@
   {"id": "lapl", "name": "Los Angeles Public Library", "place": "Los Angeles", "state": "CA", "home": "https://www.lapl.org/", "lists": [{"html": "https://www.lapl.org/digital-library"}]},
   {"id": "pratt", "name": "Enoch Pratt Free Library", "place": "Baltimore", "state": "MD", "home": "https://www.prattlibrary.org/", "lists": [{"html": "https://www.prattlibrary.org/research/databases"}]},
   {"id": "seattle", "name": "Seattle Public Library", "place": "Seattle", "state": "WA", "home": "https://www.spl.org/", "lists": [{"html": "https://www.spl.org/online-resources/a-z-online-resources"}]},
-  {"id": "sfpl", "name": "San Francisco Public Library", "place": "San Francisco", "state": "CA", "home": "https://sfpl.org/", "lists": [{"html": "https://sfpl.org/research-learn/elibrary/emagazines-enews"}]}
+  {"id": "sfpl", "name": "San Francisco Public Library", "place": "San Francisco", "state": "CA", "home": "https://sfpl.org/", "lists": [{"html": "https://sfpl.org/research-learn/elibrary/emagazines-enews"}, {"html": "https://sfpl.org/research-learn/elearning"}]}
 ]

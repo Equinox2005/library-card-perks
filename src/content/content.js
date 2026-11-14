@@ -68,7 +68,8 @@
   }
 
   async function check() {
-    if (location.pathname === lastPath) return;
+    // Chrome sometimes loads a page ahead of time, before anyone has opened it.
+    if (document.prerendering || location.pathname === lastPath) return;
     lastPath = location.pathname;
     try {
       const { library, offers = [] } = await chrome.runtime.sendMessage({ type: 'offers', hostname: location.hostname, pathname: location.pathname });
@@ -76,10 +77,11 @@
       const { hiddenSites = [] } = await chrome.storage.sync.get('hiddenSites');
       if (hiddenSites.includes(site)) return;
       // Once a day per site; the toolbar badge and the popup have it the rest of the time.
-      const day = new Date().toISOString().slice(0, 10);
-      const { shown = {} } = await chrome.storage.local.get('shown');
-      if (shown[site] === day) return;
-      await chrome.storage.local.set({ shown: { ...shown, [site]: day } });
+      const day = new Date().toDateString();
+      const key = `shown:${site}`;
+      const { [key]: last } = await chrome.storage.local.get(key);
+      if (last === day) return;
+      await chrome.storage.local.set({ [key]: day });
       render(library, offers);
     } catch {
       // The extension was reloaded or updated; this page's copy of the script is orphaned.
@@ -92,5 +94,13 @@
     clearTimeout(timer);
     timer = setTimeout(check, 500);
   }).observe(document.documentElement, { childList: true, subtree: true });
+  // A page loaded ahead of time gets its check when someone opens it.
+  document.addEventListener('prerenderingchange', check);
+  // Back and Forward bring a page back without running this again, and Chrome has cleared the badge by then.
+  addEventListener('pageshow', (event) => {
+    if (!event.persisted) return;
+    lastPath = null;
+    check();
+  });
   check();
 })();
