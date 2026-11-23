@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14",
+ "fetched": "2026-11-23",
  "libraries": [
   {
    "id": "boston",
@@ -136,8 +136,8 @@
    "page": "https://www.chipublib.org/online-resources-2/",
    "resources": {
     "nyt": {
-     "label": "New York Times (online and app)",
-     "url": "https://www.chipublib.org/online-resources-2/"
+     "label": "CPL Now Offers Access to The New York Times",
+     "url": "https://www.chipublib.org/news/new-electronic-resource-new-york-times-all-access/"
     },
     "linkedin": {
      "label": "LinkedIn Learning",
@@ -231,9 +231,9 @@
      "label": "PressReader",
      "url": "https://www.denverlibrary.org/downloads"
     },
-    "ancestry": {
-     "label": "Ancestry Library Edition",
-     "url": "https://www.denverlibrary.org/research"
+    "morningstar": {
+     "label": "Morningstar",
+     "url": "https://denverlibrary.idm.oclc.org/login?url=https://research.morningstar.com/ic/ip-sign-in"
     }
    }
   },
@@ -317,7 +317,7 @@
     },
     "valueline": {
      "label": "Value Line Research Center",
-     "url": "https://investors.valueline.com/Users/Account/barcode?urlid=9f60a9e8-05d9-4d79-8bd4-d7a596e6ec9c&=2&o=research&lp=secure%2fdashboard"
+     "url": "https://fairfax.museknowledge.com/fcpl?groupID=1&action=source&sourceID=ValueLineRC"
     },
     "tutor": {
      "label": "BrainFuse HelpNow",
